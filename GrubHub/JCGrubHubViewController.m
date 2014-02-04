@@ -37,8 +37,27 @@ NSString * const JCGrubHubURL = @"http://www.grubhub.com/";
     [self.webView reload];
 }
 
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+}
+
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     [webView.scrollView setContentSize: CGSizeMake(webView.frame.size.width, webView.scrollView.contentSize.height)];
+
+    if (webView.hidden) {
+        webView.hidden = NO;
+
+        for (UIView *view in self.view.subviews) {
+            if ([view isMemberOfClass:[UIImageView class]]) {
+                [view removeFromSuperview];
+            }
+        }
+    }
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 @end
