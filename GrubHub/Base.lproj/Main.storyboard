@@ -32,13 +32,23 @@
                                     <outletCollection property="gestureRecognizers" destination="rkm-V9-mCR" appends="YES" id="XlR-NU-RJ4"/>
                                 </connections>
                             </webView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackArrow" translatesAutoresizingMaskIntoConstraints="NO" id="ope-8A-GMi">
+                                <rect key="frame" x="324" y="452" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Hec-uN-AAB"/>
+                                    <constraint firstAttribute="width" constant="120" id="VNS-HW-zPn"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="q5i-ku-Wve" firstAttribute="top" secondItem="X1K-wv-W22" secondAttribute="bottom" id="9oH-0h-bl6"/>
                             <constraint firstItem="TX4-5J-RaA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FD5-GV-3ah"/>
+                            <constraint firstAttribute="centerY" secondItem="ope-8A-GMi" secondAttribute="centerY" id="Hgk-Li-EuU"/>
                             <constraint firstAttribute="bottom" secondItem="TX4-5J-RaA" secondAttribute="bottom" id="IhQ-Yw-275"/>
                             <constraint firstAttribute="trailing" secondItem="X1K-wv-W22" secondAttribute="trailing" id="K5e-wv-W01"/>
+                            <constraint firstAttribute="centerX" secondItem="ope-8A-GMi" secondAttribute="centerX" id="a9L-wG-Yxr"/>
                             <constraint firstItem="X1K-wv-W22" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="cY9-D2-cpB"/>
                             <constraint firstItem="TX4-5J-RaA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cob-HT-oSh"/>
                             <constraint firstItem="X1K-wv-W22" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="k0m-Vl-mMw"/>
@@ -46,29 +56,35 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="TX4-5J-RaA" id="4Bd-N3-paM"/>
+                        <outlet property="browserActionIndicatorView" destination="ope-8A-GMi" id="RaZ-dc-hI6"/>
                         <outlet property="webView" destination="X1K-wv-W22" id="h2U-3d-NUi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer delaysTouchesEnded="NO" direction="right" id="G9R-gp-sFf" userLabel="Right (Go Back) Swipe Gesture Recognizer">
+                <swipeGestureRecognizer direction="right" id="G9R-gp-sFf" userLabel="Right (Go Back) Swipe Gesture Recognizer">
                     <connections>
                         <action selector="goBack:" destination="BYZ-38-t0r" id="lif-fI-teK"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="LdP-0b-sHI"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="left" id="rkm-V9-mCR" userLabel="Left (Go Forward) Swipe Gesture Recognizer">
                     <connections>
                         <action selector="goForward:" destination="BYZ-38-t0r" id="XaP-KE-HzC"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="Gr0-Nk-Qxd"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <rotationGestureRecognizer id="K0c-LA-XU8" userLabel="Rotation (Refresh) Gesture Recognizer">
                     <connections>
                         <action selector="refresh:" destination="BYZ-38-t0r" id="b7E-RT-tkJ"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="suE-AV-y81"/>
                     </connections>
                 </rotationGestureRecognizer>
             </objects>
         </scene>
     </scenes>
     <resources>
+        <image name="BackArrow" width="120" height="120"/>
         <image name="BackgroundImage" width="1024" height="768"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

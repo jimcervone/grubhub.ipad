@@ -11,6 +11,8 @@
 @interface JCGrubHubViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet UIWebView *webView;
+@property (nonatomic, weak) IBOutlet UIImageView *browserActionIndicatorView;
+@property (nonatomic, weak) IBOutlet UIImageView *backgroundImage;
 
 - (IBAction)goBack:(id)sender;
 - (IBAction)goForward:(id)sender;
