@@ -13,14 +13,14 @@
 		3860BF5118A06D71002A2D90 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3860BF4F18A06D71002A2D90 /* InfoPlist.strings */; };
 		3860BF5318A06D71002A2D90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3860BF5218A06D71002A2D90 /* main.m */; };
 		3860BF5718A06D71002A2D90 /* JCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3860BF5618A06D71002A2D90 /* JCAppDelegate.m */; };
-		3860BF5A18A06D71002A2D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3860BF5818A06D71002A2D90 /* Main.storyboard */; };
-		3860BF5D18A06D71002A2D90 /* JCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3860BF5C18A06D71002A2D90 /* JCViewController.m */; };
+		3860BF5D18A06D71002A2D90 /* JCGrubHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3860BF5C18A06D71002A2D90 /* JCGrubHubViewController.m */; };
 		3860BF5F18A06D71002A2D90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3860BF5E18A06D71002A2D90 /* Images.xcassets */; };
 		3860BF6618A06D71002A2D90 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3860BF6518A06D71002A2D90 /* XCTest.framework */; };
 		3860BF6718A06D71002A2D90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3860BF4618A06D71002A2D90 /* Foundation.framework */; };
 		3860BF6818A06D71002A2D90 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3860BF4A18A06D71002A2D90 /* UIKit.framework */; };
 		3860BF7018A06D72002A2D90 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3860BF6E18A06D72002A2D90 /* InfoPlist.strings */; };
 		3860BF7218A06D72002A2D90 /* GrubHubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3860BF7118A06D72002A2D90 /* GrubHubTests.m */; };
+		38F9209618A07C6E0039E2C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3860BF5818A06D71002A2D90 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,15 @@
 		3860BF5518A06D71002A2D90 /* JCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAppDelegate.h; sourceTree = "<group>"; };
 		3860BF5618A06D71002A2D90 /* JCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAppDelegate.m; sourceTree = "<group>"; };
 		3860BF5918A06D71002A2D90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3860BF5B18A06D71002A2D90 /* JCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCViewController.h; sourceTree = "<group>"; };
-		3860BF5C18A06D71002A2D90 /* JCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCViewController.m; sourceTree = "<group>"; };
+		3860BF5B18A06D71002A2D90 /* JCGrubHubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCGrubHubViewController.h; sourceTree = "<group>"; };
+		3860BF5C18A06D71002A2D90 /* JCGrubHubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCGrubHubViewController.m; sourceTree = "<group>"; };
 		3860BF5E18A06D71002A2D90 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3860BF6418A06D71002A2D90 /* GrubHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrubHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3860BF6518A06D71002A2D90 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3860BF6D18A06D72002A2D90 /* GrubHubTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GrubHubTests-Info.plist"; sourceTree = "<group>"; };
 		3860BF6F18A06D72002A2D90 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3860BF7118A06D72002A2D90 /* GrubHubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrubHubTests.m; sourceTree = "<group>"; };
+		A9F6F61A87434D7F92CA07F5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +106,7 @@
 				3860BF4818A06D71002A2D90 /* CoreGraphics.framework */,
 				3860BF4A18A06D71002A2D90 /* UIKit.framework */,
 				3860BF6518A06D71002A2D90 /* XCTest.framework */,
+				A9F6F61A87434D7F92CA07F5 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,8 +117,8 @@
 				3860BF5518A06D71002A2D90 /* JCAppDelegate.h */,
 				3860BF5618A06D71002A2D90 /* JCAppDelegate.m */,
 				3860BF5818A06D71002A2D90 /* Main.storyboard */,
-				3860BF5B18A06D71002A2D90 /* JCViewController.h */,
-				3860BF5C18A06D71002A2D90 /* JCViewController.m */,
+				3860BF5B18A06D71002A2D90 /* JCGrubHubViewController.h */,
+				3860BF5C18A06D71002A2D90 /* JCGrubHubViewController.m */,
 				3860BF5E18A06D71002A2D90 /* Images.xcassets */,
 				3860BF4D18A06D71002A2D90 /* Supporting Files */,
 			);
@@ -200,6 +202,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jim Cervone";
 				TargetAttributes = {
+					3860BF4218A06D71002A2D90 = {
+						DevelopmentTeam = KR97Y7ZU34;
+					};
 					3860BF6318A06D71002A2D90 = {
 						TestTargetID = 3860BF4218A06D71002A2D90;
 					};
@@ -231,7 +236,7 @@
 			files = (
 				3860BF5F18A06D71002A2D90 /* Images.xcassets in Resources */,
 				3860BF5118A06D71002A2D90 /* InfoPlist.strings in Resources */,
-				3860BF5A18A06D71002A2D90 /* Main.storyboard in Resources */,
+				38F9209618A07C6E0039E2C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3860BF5318A06D71002A2D90 /* main.m in Sources */,
-				3860BF5D18A06D71002A2D90 /* JCViewController.m in Sources */,
+				3860BF5D18A06D71002A2D90 /* JCGrubHubViewController.m in Sources */,
 				3860BF5718A06D71002A2D90 /* JCAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,10 +386,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GrubHub/GrubHub-Prefix.pch";
 				INFOPLIST_FILE = "GrubHub/GrubHub-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -394,10 +402,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GrubHub/GrubHub-Prefix.pch";
 				INFOPLIST_FILE = "GrubHub/GrubHub-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -463,6 +474,7 @@
 				3860BF7718A06D72002A2D90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3860BF7818A06D72002A2D90 /* Build configuration list for PBXNativeTarget "GrubHubTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +483,7 @@
 				3860BF7A18A06D72002A2D90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
